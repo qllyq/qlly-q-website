@@ -24,11 +24,13 @@
 <main>
 <section id="home" class="hero scene">
   <div class="hero-video">
-    <video autoplay muted loop playsinline preload="metadata" poster="ship-interior.jpeg">
-      <source src="assets/space.mp4" type="video/mp4">
+    <video id="spaceVideo" autoplay muted loop playsinline preload="metadata" poster="ship-interior.jpeg" aria-hidden="true">
+      <source src="space.mp4" type="video/mp4">
     </video>
   </div>
-  <div class="hero-fallback"></div>
+  <div class="hero-fallback" aria-hidden="true"></div>
+  <div class="window-frame" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <div class="video-credit"><a href="https://pixabay.com/videos/earth-space-spaceship-window-orbit-337746/" target="_blank" rel="noopener">SPACE FEED / PIXABAY ↗</a></div>
   <div class="scanlines"></div>
   <div class="hud hud-left"><span>MISSION</span><b>PLAY.</b><b>CREATE.</b><b>STAY CURIOUS.</b><em>EARTH ORBIT // 001</em></div>
   <div class="hud hud-right"><span>SYSTEM STATUS</span><p>LIFE SUPPORT <b>100%</b></p><p>POWER <b>87%</b></p><p>NETWORK <b>ONLINE</b></p><p>GEAR <b>07/07</b></p></div>
