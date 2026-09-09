@@ -2,7 +2,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.space-layer,.social-space,.departure-stars{animation:none}.loader-track span{animation:none;width:100%}}
 
 /* VER.3 — viewport / product link layer */
-.hero-video video{width:100%;height:100%;object-fit:cover;opacity:1;transition:opacity .8s ease;filter:saturate(.72) contrast(1.03) brightness(.78)}
+.hero-video video{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s ease;filter:saturate(.72) contrast(1.03) brightness(.78)}
 .hero-video video.ready{opacity:1}
 .window-frame{position:absolute;inset:7% 9%;border:1px solid rgba(255,255,255,.26);border-radius:18px;pointer-events:none;z-index:3;box-shadow:inset 0 0 0 1px rgba(255,255,255,.05),inset 0 0 80px rgba(255,255,255,.08)}
 .window-frame:before,.window-frame:after{content:"";position:absolute;background:rgba(255,255,255,.18)}
@@ -13,22 +13,14 @@
 .gear-link{display:block;position:relative;color:inherit;text-decoration:none;height:100%}.gear-link img{display:block}.gear-link .access{position:absolute;right:16px;bottom:14px;font:10px 'Space Mono',monospace;letter-spacing:.14em;opacity:.35;transform:translateY(4px);transition:.25s ease}.gear-card:hover .gear-link .access{opacity:1;transform:none}.gear-card:hover{transform:translateY(-8px) rotate(var(--r))}
 @media(max-width:700px){.window-frame{inset:9% 5%;border-radius:12px}.video-credit{right:14px;bottom:14px;font-size:8px}.window-frame:before,.window-frame:after{opacity:.35}}
 
-/* === V4: REAL SPACECRAFT WINDOW === */
-.hero { background:#080b0e; }
-.hero-video, .hero-fallback { z-index:0; }
-.hero-video video {
-  width:100%; height:100%; object-fit:cover; display:block;
-  opacity:1; filter:saturate(.78) contrast(1.04) brightness(.82);
-}
-.hero-fallback { z-index:0; background:url('ship-interior.jpeg') center/cover no-repeat; }
-.ship-frame {
-  position:absolute; inset:0; width:100%; height:100%;
-  object-fit:cover; z-index:2; pointer-events:none;
-}
-.hero:after { z-index:1; pointer-events:none; }
-.hero-center { z-index:4; }
-.hud, .corner, .scroll-cue, .video-credit { z-index:5; }
-.window-frame { display:none !important; }
+/* V4 TRUE WINDOW: original ship image is the foreground; only its center window is transparent. */
+.hero { isolation:isolate; background:#080b0d; }
+.window-video { position:absolute; inset:0; z-index:0; overflow:hidden; background:#080b0d; }
+.window-video video { width:100%; height:100%; display:block; object-fit:cover; object-position:center; opacity:1; }
+.ship-window-overlay { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; z-index:2; pointer-events:none; }
+.hero .scanlines { z-index:3; }
+.hero .hud, .hero .hero-center, .hero .scroll-cue, .hero .corner { z-index:4; }
+.hero .video-credit { z-index:5; }
 @media (max-width:700px) {
-  .ship-frame { object-fit:cover; }
+  .window-video video, .ship-window-overlay { object-fit:cover; }
 }

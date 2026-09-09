@@ -23,41 +23,26 @@
 </header>
 <main>
 <section id="home" class="hero scene">
-  <div class="hero-video">
-    <video id="spaceVideo" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="ship-interior.jpeg" aria-hidden="true">
+  <div class="window-video">
+    <video id="spaceVideo" autoplay muted loop playsinline preload="auto" poster="ship-interior.jpeg" aria-label="Space view through the spacecraft window">
       <source src="space.mp4" type="video/mp4">
     </video>
   </div>
-  <div class="hero-fallback" aria-hidden="true"></div>
-
-  <!-- The cockpit image is the foreground shell. Its viewport is transparent,
-       so the MP4 is visible only through the spacecraft window. -->
-  <img class="ship-frame" src="ship-window-frame.png" alt="" aria-hidden="true">
-
-  <div class="scanlines" aria-hidden="true"></div>
+  <img class="ship-window-overlay" src="ship-window-overlay.png" alt="">
   <div class="video-credit"><a href="https://pixabay.com/videos/earth-space-spaceship-window-orbit-337746/" target="_blank" rel="noopener">SPACE FEED / PIXABAY ↗</a></div>
-
+  <div class="scanlines"></div>
+  <div class="hud hud-left"><span>MISSION</span><b>PLAY.</b><b>CREATE.</b><b>STAY CURIOUS.</b><em>EARTH ORBIT // 001</em></div>
+  <div class="hud hud-right"><span>SYSTEM STATUS</span><p>LIFE SUPPORT <b>100%</b></p><p>POWER <b>87%</b></p><p>NETWORK <b>ONLINE</b></p><p>GEAR <b>07/07</b></p></div>
   <div class="hero-center">
-    <p class="eyebrow">WELCOME ABOARD // 001</p>
+    <p class="eyebrow">WELCOME ABOARD.</p>
     <h1>QLLY_Q</h1>
     <p class="role">PILOT / CREATOR / GAMER</p>
     <div class="hero-rule"></div>
     <p class="tagline">A SMALL PLAYGROUND<br>IN A BIG UNIVERSE.</p>
   </div>
-
-  <div class="hud hud-left">
-    <span>SYSTEM / ONLINE</span>
-    <span>LOCATION / EARTH ORBIT</span>
-    <em>PLAY / CREATE / EXPLORE</em>
-  </div>
-  <div class="hud hud-right">
-    <p><b>POWER</b><span>100%</span></p>
-    <p><b>NETWORK</b><span>ONLINE</span></p>
-    <p><b>GEAR</b><span>07/07</span></p>
-  </div>
-  <div class="corner corner-tl">QLLY_Q // DIGITAL SETUP</div>
-  <div class="corner corner-br">LAUNCH SEQUENCE<br>READY</div>
   <div class="scroll-cue"><span>SCROLL TO EXPLORE</span><b>↓</b></div>
+  <div class="corner corner-tl">35.6762° N<br>139.6503° E</div>
+  <div class="corner corner-br">QLLY_Q // DIGITAL VESSEL<br>STATUS: NOMINAL</div>
 </section>
 
 <section class="launch scene-dark" id="launch">

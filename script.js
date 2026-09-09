@@ -22,18 +22,8 @@ activeCard();
 let down=false,startX=0,startScroll=0;track.addEventListener('pointerdown',e=>{down=true;startX=e.clientX;startScroll=track.scrollLeft;track.classList.add('dragging');track.setPointerCapture(e.pointerId)});track.addEventListener('pointermove',e=>{if(!down)return;track.scrollLeft=startScroll-(e.clientX-startX)*1.15});track.addEventListener('pointerup',()=>{down=false;track.classList.remove('dragging')});track.addEventListener('pointercancel',()=>{down=false;track.classList.remove('dragging')});
 
 const video=document.querySelector('.hero-video video');
-if(video){video.addEventListener('error',()=>{video.style.display='none'}); video.addEventListener('canplay',()=>{video.classList.add('ready'); const p=video.play(); if(p) p.catch(()=>{});}); video.load();}
+if(video){ video.addEventListener('canplay',()=>{video.classList.add('ready')});}
 
 const sections=[...document.querySelectorAll('section[id]')];
 const links=[...document.querySelectorAll('.nav nav a')];
 const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-40% 0px -50% 0px'});sections.forEach(s=>io.observe(s));
-
-// Try autoplay on iPad/iPhone after the page is ready.
-document.addEventListener('DOMContentLoaded',()=>{
-  const v=document.getElementById('spaceVideo');
-  if(!v) return;
-  v.muted=true; v.playsInline=true;
-  const play=()=>v.play().catch(()=>{});
-  v.addEventListener('loadeddata',play,{once:true});
-  play();
-});
