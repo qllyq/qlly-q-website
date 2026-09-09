@@ -1,12 +1,7 @@
-# QLLY_Q Website Ver.4 — TRUE SPACECRAFT WINDOW
+# QLLY_Q Website — Cockpit Window Edition
 
-The hero uses the original `ship-interior.jpeg` as the visual basis.
-`ship-window-overlay.png` is the same image with ONLY the central cockpit window made transparent.
-`space.mp4` sits behind that transparent area, so the space video is visible through the real window opening.
+Upload all files to the GitHub repository root.
 
-Upload all files in this folder to the GitHub repository root.
+The hero uses `hero-cockpit.png` as the top image and `hero-cockpit-overlay.png` as its transparent foreground. Only the panoramic viewport is transparent, so `space.mp4` appears behind it and moves while the cockpit remains static.
 
-Important:
-- Keep `space.mp4` at the repository root.
-- Keep `ship-window-overlay.png` at the repository root.
-- Existing device images and social links are included.
+All device images are kept as supplied. Device names/cards link to official product pages.
