@@ -21,3 +21,6 @@ https://pixabay.com/videos/earth-space-spaceship-window-orbit-337746/
 ## GitHub Pages
 `index.html` / `style.css` / `script.js` と画像ファイルをリポジトリのルートへ置いてください。
 `space.mp4` は任意ですが、入れるとトップの窓に実際の宇宙映像が流れます。
+
+
+V4: ship-window-frame.png is a transparent cockpit shell; space.mp4 appears only through the viewport.
