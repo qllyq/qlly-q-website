@@ -2,13 +2,13 @@ const loader=document.getElementById('loader');
 window.addEventListener('load',()=>setTimeout(()=>loader.classList.add('done'),700));
 
 const gear=[
- ['01','SP-004','SUMMER MIKU','assets/summer-miku.webp'],
- ['02','SP-004','TWIN PAD','assets/twin-pad.webp'],
- ['03','CR-005','WALLHACK CR-005','assets/cr-005.webp'],
- ['04','ULX','FINALMOUSE FROSTLORD','assets/frostlord.webp'],
- ['05','PRO SLEEVE','WALLHACK PRO SLEEVE','assets/pro-sleeve.webp'],
- ['06','SKATES DOTS','WALLHACK SKATES DOTS','assets/skates-dots.webp'],
- ['07','60HE V2','WOOTING 60HE V2','assets/wooting-60he-v2.webp']
+ ['01','SP-004','SUMMER MIKU','summer-miku.webp'],
+ ['02','SP-004','TWIN PAD','twin-pad.webp'],
+ ['03','CR-005','WALLHACK CR-005','cr-005.webp'],
+ ['04','ULX','FINALMOUSE FROSTLORD','frostlord.webp'],
+ ['05','PRO SLEEVE','WALLHACK PRO SLEEVE','pro-sleeve.webp'],
+ ['06','SKATES DOTS','WALLHACK SKATES DOTS','skates-dots.webp'],
+ ['07','60HE V2','WOOTING 60HE V2','wooting-60he-v2.webp']
 ];
 const track=document.getElementById('gearTrack');
 gear.forEach((g,i)=>{const el=document.createElement('article');el.className='gear-card';el.style.setProperty('--r',i%2?'1deg':'-1deg');el.innerHTML=`<img src="${g[3]}" alt="${g[2]}"><div class="meta"><div><strong>${g[2]}</strong><br><span>${g[1]}</span></div><span>[${g[0]}]</span></div>`;track.appendChild(el)});
