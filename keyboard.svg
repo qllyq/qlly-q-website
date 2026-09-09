@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500"><g fill="#111" stroke="#ddd" stroke-width="4"><rect x="85" y="100" width="730" height="300" rx="20"/><path d="M130 145h640v210H130z"/></g><g fill="none" stroke="#777" stroke-width="3">'''$(python - <<'PY'
+for r in range(4):
+ print(''.join(f'<path d="M{155+c*45} {170+r*42}h32v28h-32z"/>' for c in range(13)))
+PY)'''</g><text x="450" y="445" text-anchor="middle" fill="#777" font-family="monospace" font-size="22">WOOTING / 60HE V2</text></svg>
