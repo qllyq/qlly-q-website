@@ -1,4 +1,1 @@
-QLLY_Q Website — white showroom edition
-
-index.html と assets フォルダをセットのまま GitHub Pages にアップロードしてください。
-hero_desktop.jpg はアップロードされたデスク写真を背景に加工したものです。
+GitHub Pages upload: このフォルダの中身を qlly-q-website のリポジトリ直下へアップロードしてください。ZIP自体ではなく、index.htmlと画像ファイルをアップロードします。index.htmlと画像は同じ階層です。
