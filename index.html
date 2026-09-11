@@ -1,53 +1,39 @@
 <!doctype html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>QLLY_Q // 001</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div id="loader"><span>INITIALIZING VESSEL</span><b>QLLY_Q // 001</b></div>
-<header class="nav">
-<a class="brand" href="#home">QLLY_Q <small>// 001</small></a>
-<nav><a href="#home">01 HOME</a><a href="#profile">02 PROFILE</a><a href="#gear">03 GEAR</a><a href="#gallery">04 GALLERY</a><a href="#social">05 SOCIAL</a></nav>
-<a class="contact" href="#social">CONTACT →</a>
-</header>
-
-<main>
-<section id="home" class="hero">
-  <div class="space-layer"><video id="spaceVideo" autoplay muted loop playsinline preload="auto" poster="hero-cockpit-cut.jpeg"><source src="space.mp4" type="video/mp4"></video></div>
-  <img class="cockpit-frame" src="hero-cockpit-window-transparent.png" alt="">
-  <div class="hero-ui"><div class="live">● SPACE FEED / ONLINE</div><div class="scroll">SCROLL <span>↓</span></div></div>
-  <div class="hero-credit">SPACE VIDEO / PIXABAY ↗</div>
-</section>
-
-<section id="gear" class="section gear-section">
-<div class="section-head"><div><span>// EQUIPMENT</span><h2>MY GEAR</h2><p>TOOLS FOR A HIGHER PLAYGROUND.</p></div><span class="counter">07 UNITS / ONLINE</span></div>
-<div class="gear-grid">
-<a class="gear-card" href="https://finalmouse.com/products/ulx-frostlord" target="_blank" rel="noopener"><span>01 / MOUSE</span><img src="frostlord.webp" alt=""><strong>Finalmouse<br>ULX Frostlord</strong><i>↗</i></a>
-<a class="gear-card" href="https://wooting.io/ja/wooting-60he-v2" target="_blank" rel="noopener"><span>02 / KEYBOARD</span><img src="wooting-60he-v2.webp" alt=""><strong>Wooting<br>60HE v2</strong><i>↗</i></a>
-<a class="gear-card" href="https://wallhack.com/ja-jp/products/cr-005" target="_blank" rel="noopener"><span>03 / MOUSEPAD</span><img src="cr-005.webp" alt=""><strong>WALLHACK<br>CR-005</strong><i>↗</i></a>
-<a class="gear-card" href="https://wallhack.com/ja-jp/products/pro-sleeve" target="_blank" rel="noopener"><span>04 / SLEEVE</span><img src="pro-sleeve.webp" alt=""><strong>WALLHACK<br>Pro Sleeve</strong><i>↗</i></a>
-<a class="gear-card" href="https://wallhack.com/ja-jp/products/skates-dots" target="_blank" rel="noopener"><span>05 / SKATES</span><img src="skates-dots.webp" alt=""><strong>WALLHACK<br>Skates / Dots</strong><i>↗</i></a>
-<a class="gear-card" href="https://wallhack.com/ja-jp/products/sp-004-summer-miku" target="_blank" rel="noopener"><span>06 / MOUSEPAD</span><img src="summer-miku.webp" alt=""><strong>WALLHACK<br>SP-004 Summer Miku</strong><i>↗</i></a>
-<a class="gear-card" href="https://wallhack.com/ja-jp/products/sp-004-twin-pad" target="_blank" rel="noopener"><span>07 / MOUSEPAD</span><img src="twin-pad.webp" alt=""><strong>WALLHACK<br>SP-004 Twin Pad</strong><i>↗</i></a>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>qlly_q — Gaming Creator</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#07080b;color:#f5f6f8;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}a{text-decoration:none;color:inherit}
+.nav{position:fixed;z-index:50;top:0;left:0;right:0;padding:20px 5vw;display:flex;justify-content:space-between;align-items:center;background:#07080bd9;backdrop-filter:blur(16px);border-bottom:1px solid #fff1}.logo{font-weight:950;letter-spacing:.14em}.logo i{font-style:normal;opacity:.35}.nav a{font-size:12px;color:#9da5b5;margin-left:24px}.nav a:hover{color:#fff}
+.hero{height:100vh;min-height:680px;display:flex;align-items:center;padding:10vh 7vw;position:relative;overflow:hidden;background:radial-gradient(circle at 75% 35%,#6870ff3b,transparent 31%),radial-gradient(circle at 20% 70%,#22d3ee18,transparent 30%)}.hero-bg{position:absolute;inset:0;background-image:linear-gradient(#fff0 96%,#ffffff08 100%),linear-gradient(90deg,#fff0 96%,#ffffff08 100%);background-size:56px 56px;opacity:.45;mask-image:linear-gradient(#000,transparent 85%)}.hero-copy{position:relative;z-index:1}.eyebrow{font-size:11px;letter-spacing:.28em;color:#9ba1ff;font-weight:850}.hero h1{font-size:clamp(78px,14vw,190px);line-height:.82;letter-spacing:-.09em;margin:22px 0;background:linear-gradient(110deg,#fff 20%,#a9aeff 62%,#70defd);color:transparent;background-clip:text;-webkit-background-clip:text}.hero p{max-width:590px;color:#a6adbb;font-size:17px}.scroll{margin-top:45px;color:#7d8595;font-size:10px;letter-spacing:.22em}.scroll b{display:block;width:1px;height:60px;background:#7d8595;margin-top:12px;animation:scroll 1.8s infinite}@keyframes scroll{50%{transform:scaleY(.35);transform-origin:top}100%{transform:scaleY(1)}}
+section{max-width:1250px;margin:auto;padding:130px 7vw}.sectionno{color:#9097ff;font-size:11px;letter-spacing:.24em;font-weight:850}.heading{font-size:clamp(42px,7vw,86px);line-height:.95;letter-spacing:-.065em;margin:10px 0 60px}.intro{max-width:720px;color:#9ba3b2;font-size:17px}.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #fff1;border-bottom:1px solid #fff1;margin-top:55px}.stat{padding:27px 15px;border-right:1px solid #fff1}.stat:last-child{border:0}.stat strong{display:block;font-size:30px}.stat span{font-size:11px;color:#7e8797;letter-spacing:.08em}
+.games{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.game{min-height:290px;padding:34px;border:1px solid #fff1;border-radius:25px;background:linear-gradient(145deg,#ffffff0b,#ffffff02);position:relative;overflow:hidden;transition:.4s}.game:after{content:attr(data-num);position:absolute;right:20px;bottom:-25px;font-size:150px;font-weight:950;color:#fff04}.game:hover{transform:translateY(-6px);border-color:#9ba0ff55}.game>*{position:relative;z-index:1}.game small{color:#858da0;letter-spacing:.16em}.game h3{font-size:34px;margin:15px 0 7px}.game p{color:#959eae;max-width:430px}.game .meta{font-size:12px;color:#b7bdca;margin-top:20px}.game .official{display:inline-block;margin-top:18px;color:#aeb5ff;font-weight:800;font-size:13px}
+.aim{min-height:75vh;display:grid;place-items:center;text-align:center;background:radial-gradient(circle at 50% 45%,#6870ff20,transparent 36%)}.aim .heading{margin-bottom:18px}.quote{font-size:clamp(22px,3vw,38px);font-weight:800;letter-spacing:-.03em}.aim p{color:#7f8796}
+.setup-intro{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}.setup-photo{width:100%;height:570px;object-fit:cover;border-radius:28px;border:1px solid #fff1}.gear-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}.gear{border:1px solid #fff1;border-radius:25px;overflow:hidden;background:#0d0f14;transition:.4s}.gear:hover{transform:translateY(-5px);border-color:#9ba0ff55}.gear img{width:100%;height:330px;display:block;object-fit:cover;background:#090a0e}.gear .info{padding:25px}.gear small{color:#7f8796;letter-spacing:.16em}.gear h3{font-size:25px;margin:6px 0}.gear p{color:#8f98a8;font-size:14px;margin:0}.product{display:inline-block;color:#aeb5ff;font-weight:800;font-size:13px;margin-top:13px}
+.gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.gallery img{width:100%;height:100%;min-height:330px;object-fit:cover;border-radius:25px;border:1px solid #fff1}.gallery .stack{display:grid;gap:18px}.gallery .stack img{min-height:250px}
+.connect{text-align:center}.connectbox{padding:85px 25px;border:1px solid #fff1;border-radius:30px;background:radial-gradient(circle at 50% 0,#646bff25,transparent 55%),#0d0f14}.socials{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.pill{padding:12px 18px;border:1px solid #fff2;border-radius:999px;color:#b2b9c7}.pill:hover{border-color:#fff7}
+footer{padding:28px 7vw;border-top:1px solid #fff1;color:#687181;font-size:11px;display:flex;justify-content:space-between}
+.reveal{opacity:0;transform:translateY(55px);transition:opacity .9s ease,transform .9s ease}.reveal.show{opacity:1;transform:none}.delay1{transition-delay:.12s}.delay2{transition-delay:.24s}
+@media(max-width:800px){.links{display:none}.hero{min-height:620px}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid #fff1}.games,.gear-grid,.gallery,.setup-intro{grid-template-columns:1fr}.setup-photo{height:350px}.gear img{height:250px}section{padding:90px 6vw}.hero{padding-left:6vw;padding-right:6vw}}
+</style></head><body>
+<nav class="nav"><a class="logo" href="#">QLLY_Q<i>.GG</i></a><div class="links"><a href="#about">ABOUT</a><a href="#games">GAMES</a><a href="#setup">SETUP</a><a href="#connect">CONNECT</a></div></nav>
+<header class="hero"><div class="hero-bg"></div><div class="hero-copy reveal"><div class="eyebrow">GAMING / CREATOR / 07</div><h1>qlly_q</h1><p>Games. Aim. Gear. A personal showcase of the setup, games and grind behind qlly_q.</p><div class="scroll">SCROLL TO EXPLORE<b></b></div></div></header>
+<section id="about" class="reveal"><div class="sectionno">01 — ABOUT</div><div class="heading">PLAY.<br>CREATE.<br>REPEAT.</div><p class="intro">07世代。Apex Legendsを軸にFPSをプレイしながら、最近はCall of Duty: Mobileにもハマっています。日々Aimトレーニングを続けながら、自分のプレイを磨いています。</p><div class="stats"><div class="stat"><strong>07</strong><span>GENERATION</span></div><div class="stat"><strong>S12</strong><span>APEX START</span></div><div class="stat"><strong>ASC</strong><span>VALORANT PEAK</span></div><div class="stat"><strong>#3000</strong><span>CODM PEAK</span></div></div></section>
+<section id="games" class="reveal"><div class="sectionno">02 — GAMES</div><div class="heading">THE GAMES<br>I PLAY.</div><div class="games">
+<article class="game" data-num="01"><small>MAIN / PLAY SINCE S12</small><h3>Apex Legends</h3><p>今までで一番プレイしているゲーム。FPSを好きになった大きなきっかけ。</p><div class="meta">APEX LEGENDS</div><a class="official" href="https://www.ea.com/ja-jp/games/apex-legends" target="_blank">OFFICIAL SITE ↗</a></article>
+<article class="game" data-num="02"><small>MAIN / EPISODE 8 ACT III</small><h3>VALORANT</h3><p>最高ランクはAscendant。RazeメインのDuelist。空を飛び続けている時が楽しい。</p><div class="meta">RAZE / DUELIST / PEAK ASCENDANT</div><a class="official" href="https://playvalorant.com/ja-jp/" target="_blank">OFFICIAL SITE ↗</a></article>
+<article class="game" data-num="03"><small>RECENTLY HOOKED / 2019.12.07</small><h3>Call of Duty: Mobile</h3><p>2019年12月7日からプレイ。最高ランクはビリレジェンド3000位。</p><div class="meta">PEAK: LEGEND #3000</div><a class="official" href="https://www.callofduty.com/ja/mobile" target="_blank">OFFICIAL SITE ↗</a></article>
+<article class="game" data-num="04"><small>CALL OF DUTY</small><h3>Modern Warfare III</h3><p>Call of Dutyシリーズのプレイタイトルとして掲載。WarzoneからつながるFPSライフ。</p><div class="meta">MWIII</div><a class="official" href="https://www.callofduty.com/ja/modernwarfare3" target="_blank">OFFICIAL SITE ↗</a></article>
 </div></section>
-
-<section id="profile" class="section profile-section">
-<div class="profile-photo"><img src="profile-icon.jpeg" alt="QLLY_Q"></div>
-<div class="profile-copy"><span>// PILOT DATABASE / QLLY_Q</span><h2>IRREGULAR<br>GAMING UNIT.</h2><p>Active on an irregular schedule.<br>PERFORMANCE: ABOVE STANDARD.</p>
-<div class="specs"><p><b>STATUS</b> ACTIVE / IRREGULAR</p><p><b>SPECIALTY</b> COMPETITIVE GAMING</p><p><b>ACTIVITY</b> UNSCHEDULED</p></div>
-<div class="games"><span>VALORANT</span><span>APEX LEGENDS</span><span>THE FINALS</span><span>CALL OF DUTY</span></div></div></section>
-
-<section id="gallery" class="section gallery-section"><div class="section-head"><div><span>// VISUAL LOG</span><h2>GALLERY</h2></div></div>
-<div class="gallery-grid"><a href="https://wallhack.com/ja-jp/products/sp-004-summer-miku" target="_blank"><img src="summer-miku.webp" alt=""></a><a href="https://wallhack.com/ja-jp/products/sp-004-twin-pad" target="_blank"><img src="twin-pad.webp" alt=""></a><a href="https://finalmouse.com/products/ulx-frostlord" target="_blank"><img src="frostlord.webp" alt=""></a><a href="https://wooting.io/ja/wooting-60he-v2" target="_blank"><img src="wooting-60he-v2-angle.webp" alt=""></a></div></section>
-
-<section id="social" class="section social-section"><div><span>// TRANSMISSION</span><h2>FIND ME<br>OUT THERE.</h2></div>
-<div class="social-list"><a href="https://x.com/qlly_q?s=11" target="_blank"><span>X</span><b>@qlly_q</b><i>↗</i></a><a href="https://www.youtube.com/@qlly_q" target="_blank"><span>YOUTUBE</span><b>@qlly_q</b><i>↗</i></a><a href="https://www.twitch.tv/qlly_q" target="_blank"><span>TWITCH</span><b>qlly_q</b><i>↗</i></a><a href="https://www.tiktok.com/@qlly_q0" target="_blank"><span>TIKTOK</span><b>@qlly_q0</b><i>↗</i></a></div></section>
-
-<section class="departure"><span>END OF TRANSMISSION</span><h2>THANK YOU<br>FOR VISITING.</h2><a href="#home">RETURN TO COCKPIT ↑</a></section>
-</main>
-<footer><span>QLLY_Q // 001</span><span>PILOT / CREATOR / GAMER</span><span>STATUS: NOMINAL</span></footer>
-<script src="script.js"></script>
+<section class="aim reveal"><div><div class="sectionno">03 — AIM</div><div class="heading">DAILY AIM<br>TRAINING.</div><div class="quote">「日々Aimトレーニング。」</div><p>Small improvements. Every day.</p></div></section>
+<section id="setup" class="reveal"><div class="sectionno">04 — SETUP</div><div class="setup-intro"><div><div class="heading">MY CURRENT<br>SETUP.</div><p class="intro">実際のqlly_qのデスク環境。スクロールするたびにデバイスがフェードインする、プロダクトショーケース風の構成にしています。</p></div><img class="setup-photo" src="setup1.jpg" alt="qlly_q gaming setup"></div>
+<div class="gear-grid">
+<article class="gear delay1"><img src="mouse.jpg" alt="Finalmouse ULX Frostlord"><div class="info"><small>MOUSE</small><h3>Finalmouse ULX Frostlord</h3><p>現在のメインマウス。</p><a class="product" href="https://finalmouse.com/products/ulx-frostlord" target="_blank">VIEW PRODUCT ↗</a></div></article>
+<article class="gear delay2"><img src="mousepad.jpg" alt="WALLHACK CR-005"><div class="info"><small>MOUSEPAD</small><h3>WALLHACK CR-005</h3><p>現在のメインマウスパッド。</p><a class="product" href="https://wallhack.com/ja-jp/collections/all-product" target="_blank">VIEW WALLHACK ↗</a></div></article>
+<article class="gear delay1"><img src="keyboard.jpg" alt="Wooting 60HE v2"><div class="info"><small>KEYBOARD</small><h3>Wooting 60HE v2</h3><p>メインキーボード。</p><a class="product" href="https://wooting.io/ja/wooting-60he-v2" target="_blank">VIEW PRODUCT ↗</a></div></article>
+<article class="gear delay2"><img src="setup2.jpg" alt="WALLHACK CR-005 setup"><div class="info"><small>OTHER PADS</small><h3>SP-004 / Miku + Twin</h3><p>以前から使っているWALLHACKのパッドも掲載。</p><a class="product" href="https://wallhack.com/ja-jp/collections/all-product" target="_blank">VIEW WALLHACK ↗</a></div></article>
+<article class="gear delay1"><img src="setup3.jpg" alt="qlly_q setup"><div class="info"><small>SLEEVE</small><h3>WALLHACK Pro Sleeve</h3><p>セットアップに合わせて使用。</p><a class="product" href="https://wallhack.com/ja-jp/products/pro-sleeve" target="_blank">VIEW PRODUCT ↗</a></div></article>
+</div></section>
+<section class="reveal"><div class="sectionno">05 — SETUP GALLERY</div><div class="heading">THE SPACE<br>WHERE I PLAY.</div><div class="gallery"><img src="setup2.jpg" alt="Gaming setup photo"><div class="stack"><img src="setup3.jpg" alt="Gaming setup photo"><img src="setup1.jpg" alt="Gaming setup photo"></div></div></section>
+<section id="connect" class="connect reveal"><div class="connectbox"><div class="sectionno">06 — CONNECT</div><div class="heading">LET'S<br>CONNECT.</div><p class="intro" style="margin:auto">ゲーム、配信、クリップなどの活動は各SNSで。</p><div class="socials"><a class="pill" href="https://x.com/qlly_q" target="_blank">X / @qlly_q ↗</a><a class="pill" href="https://youtube.com/@qlly_q" target="_blank">YouTube ↗</a><a class="pill" href="https://www.twitch.tv/qlly_q" target="_blank">Twitch ↗</a><a class="pill" href="https://www.tiktok.com/@qlly_q0" target="_blank">TikTok ↗</a></div></div></section>
+<footer><span>© 2026 qlly_q</span><span>PLAY. CREATE. REPEAT.</span></footer>
+<script>const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.13});document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));</script>
 </body></html>
